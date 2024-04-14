@@ -1,0 +1,17 @@
+{
+    "fred": {
+        "username": "fred",
+        "password": "03AC674216F3E15C761EE1A5E255F067953623C8B388B4459E13F978D7C846F4",
+        "role": "User"
+    },
+    "pada": {
+        "username": "pada",
+        "password": "48AE011F1FEB4DC1712ABBB410E7CB91D7C84D6A93C0056E55C2C57541A5249C",
+        "role": "User"
+    },
+    "admin": {
+        "username": "admin",
+        "password": "28EFB68DCBA507ECD182BEAD31E4E2D159B0F9185861D1EBFE60A12DFB310300",
+        "role": "Admin"
+    }
+}
