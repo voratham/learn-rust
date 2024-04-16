@@ -1,9 +1,20 @@
 workspace = { members = [
     "session1/authentication",
-    "session1/hello-world",
     "session1/login",
     "session1/login_manager",
     "session1/variable",
+    "session2/channels1",
+    "session2/dashing",
+    "session2/deadlocks",
+    "session2/divide_work",
+    "session2/footgun",
+    "session2/hello-world",
+    "session2/mutexes",
+    "session2/parking",
+    "session2/rwlocks",
+    "session2/scoped_threads",
+    "session2/thread_builder",
+    "session2/workers", "session2/workers2",
 ] }
 
 [package]
