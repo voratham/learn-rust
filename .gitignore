@@ -1,3 +1,6 @@
 /target
 session2/***/target
 session1/***/target
+.DS_Store
+session2/***/.DS_Store
+session1/***/.DS_Store
