@@ -1,17 +1,17 @@
-{
-    "admin": {
-        "username": "admin",
+[
+    {
+        "name": "admin",
         "password": "5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A11EF721D1542D8",
         "role": "Admin"
     },
-    "dream": {
-        "username": "dream",
+    {
+        "name": "dream",
         "password": "5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A11EF721D1542D8",
         "role": "User"
     },
-    "plub": {
-        "username": "dream",
+    {
+        "name": "plub",
         "password": "5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A11EF721D1542D8",
         "role": "User"
     }
-}
+]

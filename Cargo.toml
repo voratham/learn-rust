@@ -20,14 +20,19 @@ workspace = { members = [
     "session2/tprio",
     "session2/workers",
     "session2/workers2",
-    "session3/hello_async", "session3/hello_tokio", "session3/hello_tokio2",
+    "session3/blocking",
+    "session3/error",
+    "session3/fileio",
+    "session3/hello_async",
+    "session3/hello_tokio",
+    "session3/hello_tokio2",
+    "session3/restclient",
+    "session3/tcpserver",
+    "session3/tokio_channles",
+    "session3/tokio_testing",
 ] }
 
 [package]
 name = "learn-rust"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
