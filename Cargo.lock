@@ -79,6 +79,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519"
 
 [[package]]
+name = "async-recursion"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "30c5ef0ede93efbf733c1a727f3b6b5a1060bbedd5600183e66f6e4be4af0ec5"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "authentication"
 version = "0.1.0"
 dependencies = [
@@ -1019,6 +1030,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "recursion"
+version = "0.1.0"
+dependencies = [
+ "async-recursion",
+ "futures",
+ "tokio",
+]
+
+[[package]]
 name = "redox_syscall"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1231,6 +1251,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "shared_state"
+version = "0.1.0"
+dependencies = [
+ "once_cell",
+ "tokio",
+]
+
+[[package]]
 name = "signal-hook-registry"
 version = "1.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1440,6 +1468,20 @@ name = "tokio_channles"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "tokio",
+]
+
+[[package]]
+name = "tokio_select"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
+name = "tokio_select_channles"
+version = "0.1.0"
+dependencies = [
  "tokio",
 ]
 
