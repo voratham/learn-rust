@@ -26,6 +26,7 @@ workspace = { members = [
     "session3/hello_async",
     "session3/hello_tokio",
     "session3/hello_tokio2",
+    "session3/logspan",
     "session3/recursion",
     "session3/restclient",
     "session3/shared_state",
@@ -34,6 +35,7 @@ workspace = { members = [
     "session3/tokio_select",
     "session3/tokio_select_channles",
     "session3/tokio_testing",
+    "session4/db",
 ] }
 
 [package]
