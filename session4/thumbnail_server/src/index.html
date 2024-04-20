@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🦀 Awesome Thumbnail Server</title>
+</head>
+
+<body>
+    <h1 style="color: red;">🦀 Welcome to the thumbnail server 🦀</h1>
+    <div id="thumbnails"></div>
+    <hr />
+    <form action="/search" method="post">
+       <strong>Search: </strong> <input type="text" name="tags" placeholder="Tags"><br />
+        <input type="submit" name="Search" />
+    </form>
+    <hr />
+    <h2>Add an Image</h2>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="text" name="tags" value="" placeholder="Tags" /> <br />
+        <input type="file" name="image" /> <br />
+        <input type="submit" value="uploadNewImage" />
+    </form>
+
+
+    <script>
+        async function getImages() {
+            const response = await fetch('/images');
+            const images = await response.json();
+
+            let html = "";
+            for (let i = 0; i < images.length; i++) {
+                html += "<div>" + images[i].tags + "<br />";
+                html += "<a href='/image/" + images[i].id + "'>";
+                html += "<img src='/thumb/" + images[i].id + "' />";
+                html += "</a></div>";
+
+            }
+            document.getElementById("thumbnails").innerHTML = html;
+        }
+
+        getImages();
+    </script>
+
+</body>
+
+</html>
