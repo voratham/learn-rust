@@ -41,6 +41,7 @@ workspace = { members = [
     "session4/dropping_smart_pointer",
     "session4/libc_malloc",
     "session4/memory",
+    "session4/refcount",
     "session4/test_image",
     "session4/thumbnail_server",
     "session4/web_service",
